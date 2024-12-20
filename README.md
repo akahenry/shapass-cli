@@ -9,22 +9,20 @@ Current version: `v1.1.0`
 ## Installation
 
 ```
-$ go get -d github.com/kmyokoyama/shapass-cli
-$ cd $GOPATH/src/github.com/kmyokoyama/shapass-cli
-$ go get -d ./... # Get all dependencies.
 $ go install
+$ go build
 ```
 
 You can later create an alias:
 
 ```
-$ echo "alias shapass=$GOPATH/bin/shapass-cli" >> ~/.bashrc
+$ echo "alias shapass=$PWD/shapass-cli" >> ~/.bashrc
 ```
 
 Or copy the binary to somewhere in `$PATH`, for instance:
 
 ```
-$ cp $GOPATH/bin/shapass-cli /usr/local/bin/shapass
+$ cp $PWD/shapass-cli /usr/local/bin/shapass
 ```
 
 ## Integration with shapass.com API
@@ -143,14 +141,6 @@ Note: the final length of the password may exceed 44 characters. In fact, it wil
 ## Contributing
 
 Contributions are welcome.
-
-Get the required dependencies with:
-
-```
-$ go get -d ./... # Get all dependencies.
-```
-
-And start hacking!
 
 ## License
 
